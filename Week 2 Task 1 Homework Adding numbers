@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int getValueFromUser()
+{
+int amount;
+cout<<"\nEnter an integer:";
+cin>>amount;
+return amount;
+}
+
+int main() 
+{
+int number {getValueFromUser()};
+int number2 {getValueFromUser()};
+int number3 {getValueFromUser()};
+
+cout << "\n\nIf you add the three amounts above together then the total you get is "<<number+number2+number3;
+cout<<"\n\nLets extend the task further, just for a bit of fun, lets see  what both double and quadruple amounts of your original sum are";
+cout << "\n\nIf you then double the total above your new amount is "<<number+number2+number3*4;
+cout << "\n\nHowever, if you quadruple the original total you now get "<<number+number2+number3*10;
+cout<<"\n\nYou are a clever little wotsit arent you, haa haa";
+return 0;
+} 
